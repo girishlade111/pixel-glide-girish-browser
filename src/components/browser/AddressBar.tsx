@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Search, Home, Translate, Incognito } from 'lucide-react';
+import { Search, Home, Globe, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -81,7 +81,7 @@ const AddressBar: React.FC<AddressBarProps> = ({
           size="icon"
           className="text-gray-400 hover:text-white"
         >
-          <Translate size={18} />
+          <Globe size={18} />
         </Button>
         
         <Button
@@ -93,7 +93,7 @@ const AddressBar: React.FC<AddressBarProps> = ({
             isIncognito ? "text-girish-primary" : "text-gray-400 hover:text-white"
           )}
         >
-          <Incognito size={18} />
+          <ShieldAlert size={18} />
         </Button>
       </div>
     </div>
